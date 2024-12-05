@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:3000', // Replace with your frontend's URL
+    origin: 'http://46.202.162.187:3000', // Replace with your frontend's URL
     credentials: true
 }));
 
