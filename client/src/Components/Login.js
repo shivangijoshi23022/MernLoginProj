@@ -13,7 +13,7 @@ function Login({ setIsLoggedIn, isLoggedIn }) {
         axios.post("http://46.202.162.187:3001/login", { email, password }, { withCredentials: true })
             .then(result => {
                 if (result.data === "Success") {
-                    axios.get('http://local host:3001/user', { withCredentials: true })
+                    axios.get('http://46.202.162.187:3001/user', { withCredentials: true })
                         .then(response => {
                             if (response.data.user) {
                               setIsLoggedIn(true);
